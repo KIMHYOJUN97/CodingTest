@@ -21,5 +21,5 @@ def solution(phone_book):
         for number in phone_number:
             temp += number
             if temp in hash_map and temp != phone_number:
-                answer = False
+                return False
     return answer
