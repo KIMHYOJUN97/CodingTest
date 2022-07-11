@@ -1,5 +1,6 @@
 import heapq
-
+#리스트 remove사용해서 풀기도 가능할거같은데
+#heap은 자동정렬 해주는것이 편해서 사용?
 def solution(scoville, K):
     answer = 0
     heap_scovile = []
