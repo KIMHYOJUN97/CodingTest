@@ -3,19 +3,14 @@ import heapq
 #heap은 자동정렬 해주는것이 편해서 사용?
 def solution(scoville, K):
     answer = 0
-    heap_scovile = []
-    for i in range(len(scoville)):
-        heapq.heappush(heap_scovile,scoville[i])
-    while True:
+    heapq.heapify(scoville)
+    while len(scoville)>=2 and scoville[0] <K:
+        sum = heapq.heappop(scoville) + 2*heapq.heappop(scoville)
+        heapq.heappush(scoville,sum)
         answer += 1
-        sum_scovile = heap_scovile[0]+heap_scovile[1]*2
-        if sum_scovile>=K:
-            return answer
-        else:
-            heapq.heappop(heap_scovile)
-            heapq.heappop(heap_scovile)
-            heapq.heappush(heap_scovile,sum_scovile)
-
+    
+    if scoville[0] <K:
+        return -1
     return answer
 
 print(solution([1, 2, 3, 9, 10, 12],7))
