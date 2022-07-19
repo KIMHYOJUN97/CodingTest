@@ -1,4 +1,5 @@
 #성적이 낮은 순서로 학생 출력하기
+#tuple 형식도 상관 없음
 n = int(input())
 grade = []
 for i in range(n):
