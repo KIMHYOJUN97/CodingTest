@@ -63,13 +63,17 @@ def solution(numbers):
     answer = int(answer)
     return str(answer)
 
-print(solution([101, 10, 232, 23]))
+# print(solution([101, 10, 232, 23]))
 
-def solution(numbers):
+def solution2(numbers):
     answer = ''
-    numbers=map(str,numbers)
-    numbers.sort(key=lambda x:x*3,reversed=True)
+    numbers=list(map(str,numbers))
+    print(numbers)
+    numbers.sort(key=lambda x:x*3,reverse=True)
+    print(numbers)
     for num in numbers:
         answer += num
     return str(int(answer))
 # 2323210110
+
+print(solution2([101, 10, 232, 23]))
