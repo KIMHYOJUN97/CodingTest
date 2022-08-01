@@ -14,6 +14,6 @@ def solution(numbers, target):
     dfs(0)
     return answer
 
-numbers = [1,1,1,1,1]
+numbers = [1,1,1,1,1] 
 target = 3
 print(solution(numbers,target))
