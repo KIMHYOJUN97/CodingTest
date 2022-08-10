@@ -3,6 +3,8 @@
 #모든 노드와 연결된 노드 하나 찾고
 #그 노드에게 진 노드 찾기?
 #완전탐색 느낌으로 풀어야하나
+#플로이드 워셜
+
 from collections import defaultdict
 from collections import deque
 
