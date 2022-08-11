@@ -8,7 +8,6 @@ for i in range(n):
     if question[0] == "push_back":
         dq.append(question[1])
     elif question[0] == "push_front":
-        print(question[1])
         dq.insert(0,question[1])
     elif question[0] == "front":
         if dq:
@@ -37,6 +36,6 @@ for i in range(n):
             answer.append(0)
         else:
             answer.append(1)
-print(dq)
+
 for i in range(len(answer)):
     print(answer[i])
