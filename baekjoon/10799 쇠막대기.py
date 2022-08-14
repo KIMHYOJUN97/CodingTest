@@ -1,6 +1,5 @@
 #쇠막대기가 생기는 건 무조건 n+1개
 st = list(input())
-print(st)
 laser = []
 #index -1
 pipeline = []
@@ -25,4 +24,4 @@ for pipe in pipeline_stack:
             cnt += 1
     answer += (cnt+1)
 
-print(cnt)
+print(answer)
