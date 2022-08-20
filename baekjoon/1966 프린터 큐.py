@@ -9,6 +9,7 @@ for _ in range(n):
     max_list = sorted(priority,reverse=True)
     for i in range(len(priority)):
         priority[i] = [priority[i],i]
+    # priority[M][1] = [priority[M],-1]
     priority[M][1] =-1
     while priority:
         if priority[0][0]==max_list[0]:
