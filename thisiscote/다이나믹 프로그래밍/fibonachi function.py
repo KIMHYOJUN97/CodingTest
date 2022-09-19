@@ -6,6 +6,7 @@ def fibo(x):
 
 d = [0] * 100
 
+#Memoization
 def fibo2(x):
     if x == 1 or x == 2:
         return 1

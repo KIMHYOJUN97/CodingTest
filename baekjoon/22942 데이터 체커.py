@@ -42,7 +42,6 @@ for i in range(n):
     circles.append([x+r,close,i])
 
 circles.sort(key = lambda x:x[0])
-print(circles)
 stack = []
 attached = set()
 for circle in circles:
