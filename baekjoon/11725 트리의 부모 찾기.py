@@ -59,7 +59,6 @@ def bfs():
                 queue.append(nxt)
 
 bfs()
-print(ans)
 res = ans[2:]
 for x in res:
     print(x)
