@@ -44,7 +44,6 @@ for i in range(2,n+1):
         exclusion()
         location = []
         first(location)
-print()
 for g in graph:
     for _ in g:
         print(_,end='')
